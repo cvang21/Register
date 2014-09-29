@@ -7,7 +7,8 @@ package register;
 
 /**
  *
- * @author Owner
+ * @author Owner, cvang21@my.wctc.edu
+ * @version 1.00
  */
 public interface RegisterOutput {
     

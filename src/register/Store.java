@@ -21,8 +21,14 @@ public class Store {
     public String getStoreNum() {
         return storeNum;
     }
-
+/**
+ * Sets the store number.  This method does not current method
+ * @param storeNum 
+ */
     public void setStoreNum(String storeNum) {
+        if (storeNum == null || storeNum.length() < 1){
+        throw new IllegalArgumentException();
+        }
         this.storeNum = storeNum;
     }
 
