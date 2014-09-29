@@ -11,5 +11,8 @@ package register;
  */
 public interface DiscountType {
     
+    public abstract void setDiscount();
+    public abstract double getDiscount(double disc);
+      
     
 }
