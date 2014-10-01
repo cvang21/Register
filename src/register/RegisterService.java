@@ -10,5 +10,13 @@ package register;
  * @author Owner
  */
 public class RegisterService {
-    
+ 
+   Customer customer = new Customer();
+   Receipt receipt = new Receipt();
+     
+   RegisterCustomerInfo registerCustomerInfo = new RegisterCustomerInfo();
+   RegisterGenerateSale registerGenerateSale = new RegisterGenerateSale(registerCustomerInfo);
+   
+   
+   
 }

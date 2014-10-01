@@ -14,16 +14,29 @@ public class Product {
     private String prodID;
     private String description;
     private double unitPrice;
-    private DiscountType discountType;
+    
+    private DiscountStrategy discountType;   //Consider using discountStrategy
 
     public String getProdID() {
         return prodID;
     }
 
-    public void setProdID(String prodID) {
+    /**
+     * Sets the id.  This method is not yet validated (Any warnings)
+     * @param prodID 
+     * 
+     */
+    public final void setProdID(final String prodID) {
+        if(prodID == null || prodID.length()<2){
+            throw new IllegalArgumentException();
+        }
         this.prodID = prodID;
     }
 
+    /**
+     * Gets a description
+     * @return a description
+     */
     public String getDescription() {
         return description;
     }
@@ -40,11 +53,11 @@ public class Product {
         this.unitPrice = unitPrice;
     }
 
-    public DiscountType getDiscountType() {
+    public DiscountStrategy getDiscountType() {
         return discountType;
     }
 
-    public void setDiscountType(DiscountType discountType) {
+    public void setDiscountType(DiscountStrategy discountType) {
         this.discountType = discountType;
     }
     

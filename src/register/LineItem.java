@@ -7,8 +7,12 @@ package register;
 
 /**
  *
- * @author Owner
+ * @author Ching Vang
  */
 public class LineItem {
+    private double subTotal;
+    Product product = new Product();
+    
+    
     
 }

@@ -12,4 +12,10 @@ package register;
  */
 public interface RegisterOutput {
     
+    public abstract void getStoreInfo();
+    public abstract void getCustomerInfo();
+    public abstract void getLineItem();
+    
+   
+    
 }

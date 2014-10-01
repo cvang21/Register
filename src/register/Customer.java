@@ -15,7 +15,6 @@ public class Customer {
     private String customerPhone;
     private String customerCreditCard;
     private String customerAccountNum;
-    private boolean customerRewardsActive;
 
     public String getCustomerLastName() {
         return customerLastName;
@@ -56,14 +55,5 @@ public class Customer {
     public void setCustomerAccountNum(String customerAccountNum) {
         this.customerAccountNum = customerAccountNum;
     }
-
-    public boolean isCustomerRewardsActive() {
-        return customerRewardsActive;
-    }
-
-    public void setCustomerRewardsActive(boolean customerRewardsActive) {
-        this.customerRewardsActive = customerRewardsActive;
-    }
-    
-    
+  
 }
