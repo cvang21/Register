@@ -11,9 +11,9 @@ package register;
  */
 public interface RegisterInput {
     
-    public abstract void setStoreInfo();
-    public abstract void setCustomerInfo();
-    public abstract void setLineItem();
+    public abstract void getStoreInfo();
+    public abstract void getCustomerInfo();
+    public abstract void getLineItem();
    
    
     

@@ -7,7 +7,7 @@ package register;
 
 /**
  *
- * @author Owner
+ * @author Ching Vang
  */
 public class DiscountNone implements DiscountStrategy {
 

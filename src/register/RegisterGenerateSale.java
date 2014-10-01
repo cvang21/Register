@@ -15,7 +15,6 @@ public class RegisterGenerateSale implements RegisterOutput{
     public RegisterGenerateSale(RegisterCustomerInfo custinfo) {
            
     }
-
     
     @Override
     public void getStoreInfo() {
@@ -29,6 +28,11 @@ public class RegisterGenerateSale implements RegisterOutput{
 
     @Override
     public void getLineItem() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void generateReceipt() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

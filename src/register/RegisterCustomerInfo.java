@@ -11,20 +11,19 @@ package register;
  */
 public class RegisterCustomerInfo implements RegisterInput {
 
-    Customer customer = new Customer();
     
     @Override
-    public void setStoreInfo() {
+    public void getStoreInfo() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void setCustomerInfo() {
+    public void getCustomerInfo() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void setLineItem() {
+    public void getLineItem() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

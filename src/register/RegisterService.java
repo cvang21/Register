@@ -16,7 +16,7 @@ public class RegisterService {
      
    RegisterCustomerInfo registerCustomerInfo = new RegisterCustomerInfo();
    RegisterGenerateSale registerGenerateSale = new RegisterGenerateSale(registerCustomerInfo);
-   
+      
    
    
 }
