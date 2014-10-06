@@ -14,13 +14,22 @@ public class Customer {
     private String customerFirstName;
     private String customerPhone;
     private String customerCreditCard;
-    private String customerAccountNum;
+
+    public Customer(String customerLastName, String customerFirstName, String customerPhone, String customerCreditCard) {
+        this.customerLastName = customerLastName;
+        this.customerFirstName = customerFirstName;
+        this.customerPhone = customerPhone;
+        this.customerCreditCard = customerCreditCard;
+    }
+
 
     public String getCustomerLastName() {
         return customerLastName;
     }
 
     public void setCustomerLastName(String customerLastName) {
+        if(customerLastName == null || customerLastName.length() == 0){
+        throw new IllegalArgumentException();}
         this.customerLastName = customerLastName;
     }
 
@@ -29,6 +38,8 @@ public class Customer {
     }
 
     public void setCustomerFirstName(String customerFirstName) {
+        if (customerFirstName == null || customerFirstName.length() == 0){
+        throw new IllegalArgumentException();}
         this.customerFirstName = customerFirstName;
     }
 
@@ -37,6 +48,8 @@ public class Customer {
     }
 
     public void setCustomerPhone(String customerPhone) {
+        if (customerPhone == null || customerPhone.length() == 0){
+        throw new IllegalArgumentException();}
         this.customerPhone = customerPhone;
     }
 
@@ -45,15 +58,9 @@ public class Customer {
     }
 
     public void setCustomerCreditCard(String customerCreditCard) {
+        if (customerCreditCard == null || customerCreditCard.length() == 0){
+        throw new IllegalArgumentException();}
         this.customerCreditCard = customerCreditCard;
     }
 
-    public String getCustomerAccountNum() {
-        return customerAccountNum;
-    }
-
-    public void setCustomerAccountNum(String customerAccountNum) {
-        this.customerAccountNum = customerAccountNum;
-    }
-  
 }

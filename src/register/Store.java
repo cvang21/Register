@@ -7,7 +7,7 @@ package register;
 
 /**
  *
- * @author Owner
+ * @author Ching Vang
  */
 public class Store {
     
@@ -16,7 +16,19 @@ public class Store {
     private String storeStreetAddress;
     private String storeCity;
     private String storeState;
+    private String storeZip;
     private String storePhone;
+
+    public Store(String storeNum, String storeName, String storeStreetAddress, String storeCity, String storeState, String storeZip, String storePhone) {
+        this.storeNum = storeNum;
+        this.storeName = storeName;
+        this.storeStreetAddress = storeStreetAddress;
+        this.storeCity = storeCity;
+        this.storeState = storeState;
+        this.storeZip = storeZip;
+        this.storePhone = storePhone;
+    }
+    
 
     public String getStoreNum() {
         return storeNum;
@@ -37,6 +49,9 @@ public class Store {
     }
 
     public void setStoreName(String storeName) {
+        if (storeName == null || storeName.length() < 1){       
+             throw new IllegalArgumentException();
+        }
         this.storeName = storeName;
     }
 
@@ -45,6 +60,9 @@ public class Store {
     }
 
     public void setStoreStreetAddress(String storeStreetAddress) {
+        if (storeStreetAddress == null || storeStreetAddress.length() < 1){
+        throw new IllegalArgumentException();
+        }
         this.storeStreetAddress = storeStreetAddress;
     }
 
@@ -53,6 +71,9 @@ public class Store {
     }
 
     public void setStoreCity(String storeCity) {
+        if (storeCity == null || storeCity.length() < 1){
+        throw new IllegalArgumentException();
+        }
         this.storeCity = storeCity;
     }
 
@@ -61,6 +82,9 @@ public class Store {
     }
 
     public void setStoreState(String storeState) {
+        if (storeState == null || storeState.length() < 1){
+        throw new IllegalArgumentException();
+        }
         this.storeState = storeState;
     }
 
@@ -69,6 +93,9 @@ public class Store {
     }
 
     public void setStorePhone(String storePhone) {
+        if (storePhone == null || storePhone.length() < 1){
+        throw new IllegalArgumentException();
+        }
         this.storePhone = storePhone;
     }
     

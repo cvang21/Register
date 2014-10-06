@@ -14,9 +14,15 @@ public class Product {
     private String prodID;
     private String description;
     private double unitPrice;
+    private DiscountStrategy discountType;
     
-    private DiscountStrategy discountType;   //Consider using discountStrategy
-
+    public Product(String prodID, String description, double unitPrice, DiscountStrategy discountType) {
+        this.prodID = prodID;
+        this.description = description;
+        this.unitPrice = unitPrice;
+        this.discountType = discountType;
+    }
+    
     public String getProdID() {
         return prodID;
     }

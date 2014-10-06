@@ -10,9 +10,14 @@ package register;
  * @author Ching Vang
  */
 public class LineItem {
-    private double subTotal;
-    Product product = new Product();
     
+    private Product product;
+    private int quantity;
+    
+    public LineItem(Product product, int quantity) {
+        this.product = product;
+        this.quantity = quantity;
+    }
     
     
 }

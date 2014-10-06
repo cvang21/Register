@@ -7,32 +7,34 @@ package register;
 
 /**
  *
- * @author Ching Vang
+ * @author Owner
  */
-public class DiscountBulk implements DiscountStrategy{
-    private int bulkQty;
-    private double discountRate = .30;
+public class DiscountWeekendSale implements DiscountStrategy{
+
+    private double discountRate = 0.20;  //This is the basic weekend discount
+
+    
+    public DiscountWeekendSale() {
+        setDiscountRate(discountRate);
+    }
+
     
     @Override
-    public double getDiscount() {
+    public final double getDiscount() {
         return discountRate;
     }
 
     @Override
-    public double getDiscountRate(double unitPrice, int qty) {
-         if (unitPrice == 0 || qty == 0){
+    public final double getDiscountRate(double unitPrice, int qty) {
+        if (unitPrice == 0 || qty == 0){
          throw new IllegalArgumentException();
         }
-         if (qty < bulkQty){
-         throw new IllegalArgumentException();}  //Does not qualify for qty disc
-         
         return unitPrice * qty * discountRate;
     }
 
     @Override
-    public void setDiscountRate(double discountRate) {
+    public final void setDiscountRate(double discountRate) {
         this.discountRate = discountRate;
     }
-
-
+    
 }

@@ -9,10 +9,6 @@ package register;
  *
  * @author Owner
  */
-public interface DiscountStrategy {
-    
-    public abstract double getDiscount();
-    public abstract double getDiscountRate(double unitPrice, int qty);
-    public abstract void setDiscountRate(double discountRate);  
+public class ItemsOnSale {
     
 }
